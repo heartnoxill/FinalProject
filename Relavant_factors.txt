@@ -1,0 +1,12 @@
+Target: PM2.5, PM10
+Factors:
+O3
+CO
+NO2
+SO2
+Wind speed
+Wind direction
+Temperature
+Relative humidity
+atmospheric pressure
+Rainfalls (precipitation)
