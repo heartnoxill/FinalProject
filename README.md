@@ -6,20 +6,20 @@
 
 ## Objective of the project
 
-  To integrate the concepts of cloud computing, data science, air pollution, and sustainability into a project. Using a cloud platform will benefit the data by means such as security, flexibility, mobility, loss prevention, disaster recovery, etc. 
-
-  It will also be a good example to demonstrate the cloud engineering procedures for the upcoming Thailand server of cloud services providers. Data science will help us understand the available data better. 
-The short period warning from deep learning methods will aid with the decision of the next course of action to deal with air pollution problems.
+- To integrate the concepts of cloud computing, data science, air pollution, and sustainability into a project for analyzing, forecasting.
+- Good example to demonstrate the cloud engineering procedures for the upcoming Thailand server of cloud services providers.
+- Compare deep learning models that predict the air pollution value of PM 2.5 and PM 10.
 
 ## Scope of the work
 
-- This project will gather the dataset from online sources, for example, Thai Pollution Control Department, Thailand Open Data, Longdo Traffic, World Bank's Climate Change Data, etc.
+- Data Gathering: At least 70 columns and 3000 rows of PM2.5 data 
+- Cloud Platform Development: Data warehouse and storage of data on Google Cloud Platform 
+- Correlation Study: For example, relation between PM2.5 and Traffic Index
+- Univariate Time Series Model Comparisons
+- PowerBI Visualizations
 
-- This project will develop a system using Google Cloud Platform (GCP) to store the raw data and perform the ETL method to transform the data and keep it in the data warehouse. Then we will use Google's API to link the Google Colab and the GCP together for further data science processes.
-
-- This project will perform the aforementioned data science methodology to deeply study the correlation between our datasets.
-
-- This project will develop a short period warning system that will predict the PM value in the next short period. This involves using deep learning techniques, we will compare the traditional ANN method with LSTM method to see which one performs better.
+## GCP System Overview
+![Screenshot 2023-05-28 160946](https://github.com/heartnoxill/FinalProject/assets/45389169/e36a8afb-6dbc-45fa-a6bf-775979fa4da7)
 
 ## GCP
 
