@@ -21,3 +21,45 @@ The short period warning from deep learning methods will aid with the decision o
 
 - This project will develop a short period warning system that will predict the PM value in the next short period. This involves using deep learning techniques, we will compare the traditional ANN method with LSTM method to see which one performs better.
 
+## GCP
+
+- We stored the raw data XLSX files in Google Cloud Storage.
+- We tried to transform the raw data to table form in Google BigQuery, but it does not support XLSX files.
+- So, we transform XLSX to CSV.
+- Again, we stored the raw data (now CSV) in Google Cloud Storage.
+- Then, transform the CSVs to table form in Google BigQuery.
+- Each CSV file will be dedicated one table.
+
+## GCP to Colab
+
+- We authenticated the admin user (E-mail) in Colab first.
+- Specify the project ID and tables, then Get (method) the table.
+- Transform each tables into DataFrame.
+- Remove the _ in front of the column name.
+
+## BigQuery to Colab data corruption fix
+
+- The first 2, 3 rows are appended with random data, we dropped them out.
+- Re-sort the rows by using Date column as reference.
+- Use reset_index function to reset the column to Date.
+- Drop the newly generated 'index' column as we don't need it.
+
+## PM 2.5 and PM 10 data cleaning
+
+- We dropped the column that every rows are NaN. Dropped the first half of PM 2.5's 2011 data (and reset index), and latter half of PM 2.5's 2022 data (they are empty rows). 
+- Change the datatype of columns, [Date] to datetime, [Stations] to numeric using Pandas.
+- Use linear interpolate on each columns to clean the NaN values.
+- Some year data's first few rows are NaN, only interpolate() itself cannot deal with that. We use bfill (Backward fill) after interpolate().
+- Average each column's value to find the year's average.
+- Concatenate all the datetime and value column.
+
+## LONGDO Traffic index data cleaning
+0. Downsample from 5 mins to daily (to compare with daily PM value later)
+1. Editing timestamp format.
+2. Use Group by function and then Average values in same date.
+3. Set datetime as index.
+4. Use Reindex() method on the missing dates (add dates that have missing value with NaN).
+5. Use Linear Interpolate method on the NaN (fillna) to fill out the NaN.
+6. Use resetindex() to change datetime to column.
+
+Power BI Link https://app.powerbi.com/view?r=eyJrIjoiN2EwOGY2YWQtZmNmYS00NDYyLTg2NzAtNzE4YzdkMmExNGY0IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D
