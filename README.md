@@ -62,4 +62,5 @@ The short period warning from deep learning methods will aid with the decision o
 5. Use Linear Interpolate method on the NaN (fillna) to fill out the NaN.
 6. Use resetindex() to change datetime to column.
 
-Power BI Link https://app.powerbi.com/view?r=eyJrIjoiN2EwOGY2YWQtZmNmYS00NDYyLTg2NzAtNzE4YzdkMmExNGY0IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D
+Power BI Link: https://app.powerbi.com/view?r=eyJrIjoiN2EwOGY2YWQtZmNmYS00NDYyLTg2NzAtNzE4YzdkMmExNGY0IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D
+Final Presentation Link: https://www.canva.com/design/DAFctH4XQfw/7BH3dhmVKUXrio2v_2Xbog/view?utm_content=DAFctH4XQfw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
